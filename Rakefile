@@ -20,7 +20,7 @@ end
 
 namespace :debug do
   require 'benchmark'
-  require 'poparser'
+  require_relative 'lib/poparser'
 
   desc "Benchmark of 10 full PoParser runs of test/benchmark.po"
   task "benchmark" do
